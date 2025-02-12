@@ -1,26 +1,27 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
-    padding: 40px 20px;
+    padding: 0;
     background-color: #E0E1DD;
     color: #0D1B2A;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: none;
     width: 100%;
 }
 
 header {
-    background-color: #E0E1DD;
-    color: black;
-    padding: 10px 0;
+    background-color: #4a90e2; /* Updated to provide contrast */
+    color: #fff;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-bottom: 20px; /* Added spacing */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
@@ -30,19 +31,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #E0E1DD; /* Updated for better visibility */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.2); /* Added hover effect */
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
 section {
     padding: 40px 20px;
-    margin: 20px auto;
+    margin: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 100%;
 }
 
 h1 {
@@ -53,10 +61,10 @@ h1 {
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     background-color: #E0E1DD;
-    color: #fff;
-    position: fixed;
+    color: #0D1B2A; /* Updated for better visibility */
+    position: sticky; /* Changed from fixed to sticky */
     width: 100%;
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -69,4 +77,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Added media query for larger screens */
+@media (min-width: 1200px) {
+    section {
+        margin: 40px auto;
+        max-width: 1200px;
+    }
 }
